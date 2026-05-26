@@ -1,6 +1,6 @@
-﻿using DTOProject.DTO.Domain.ValueObjects;
+﻿using CoreData.DTO.Domain.ValueObjects;
 
-namespace DTOProject.DTO.Domain.models;
+namespace CoreData.DTO.Domain.models;
 
 public class User
 {
@@ -8,7 +8,4 @@ public class User
     public string Username {get; private set;}
     public Email Email {get; private set;}
     public PhoneNumber PhoneNumber {get; private set;}
-    
-
-    
 }

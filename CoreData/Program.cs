@@ -1,4 +1,4 @@
-﻿namespace DTOProject;
+﻿namespace CoreData;
 
 class Program
 {

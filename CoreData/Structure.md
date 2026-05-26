@@ -1,10 +1,10 @@
 ﻿MyApp/
-├── MyApp.Domain/                    # Слой домена (бизнес-логика)
+├── MyApp.Domain/                    # Слой домена
 │   ├── Models/                      # Бизнес модели
 │   │   ├── User.cs
 │   │   ├── Order.cs
 │   │   └── Product.cs
-│   ├── ValueObjects/                # Значимые объекты
+│   ├── ValueObjects/                # объекты
 │   │   ├── Email.cs
 │   │   ├── Address.cs
 │   │   └── Money.cs
@@ -44,23 +44,19 @@
 │       └── LoginValidator.cs
 │
 ├── MyApp.Infrastructure/            # Инфраструктура (работа с БД)
-│   ├── Data/
-│   │   ├── Context/                # Контекст БД
-│   │   │   └── AppDbContext.cs
-│   │   ├── Entities/               # DAO - сущности БД
-│   │   │   ├── UserEntity.cs
-│   │   │   ├── OrderEntity.cs
-│   │   │   └── ProductEntity.cs
-│   │   ├── Configurations/         # Конфигурации маппинга
-│   │   │   ├── UserConfiguration.cs
-│   │   │   └── OrderConfiguration.cs
-│   │   ├── Repositories/           # Реализация репозиториев (DAO)
-│   │   │   ├── UserRepository.cs
-│   │   │   └── OrderRepository.cs
-│   │   └── Migrations/            # Миграции
-│   └── External/                   # Внешние сервисы
-│       ├── EmailService.cs
-│       └── PaymentService.cs
+│   └── Data/
+│       ├── Context/                # Контекст БД
+│       │   └── AppDbContext.cs
+│       ├── Entities/               # DAO - сущности БД
+│       │   ├── UserEntity.cs
+│       │   ├── OrderEntity.cs
+│       │   └── ProductEntity.cs
+│       ├── Configurations/         # Конфигурации маппинга
+│       │   ├── UserConfiguration.cs
+│       │   └── OrderConfiguration.cs
+│       └── Repositories/           # Реализация репозиториев (DAO)
+│           ├── UserRepository.cs
+│           └── OrderRepository.cs
 │
 └── MyApp.API/                      # Слой представления
 ├── Controllers/

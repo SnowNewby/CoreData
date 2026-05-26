@@ -1,4 +1,4 @@
-﻿namespace DTOProject.DTO.Domain.ValueObjects;
+﻿namespace CoreData.DTO.Domain.ValueObjects;
 
 public class PhoneNumber
 {
